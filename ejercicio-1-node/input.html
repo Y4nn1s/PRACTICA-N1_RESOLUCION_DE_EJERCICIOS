@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Codificación estándar en la web. -->
+    <meta charset="UTF-8">
+
+    <!-- Control de escala y dimensiones en dispositivos móviles. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página. -->
+    <title>Animal Favorito</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>¿Cuál es tu animal favorito?</h1>
+
+        <!-- Formato del formulario que se encargará de recibir los datos de entrada por el usuario. -->
+        <!-- La palabra clave 'action' refleja la dirección URL donde se enviarán los datos (ruta POST en el server.js). -->
+        <!-- Este otro parámetro 'method="POST"' permite que los datos se envíen en el cuerpo de la petición HTTP. -->
+        <form action="/guardar-animal" method="POST">
+
+            <!-- Llama un campo de texto para el ingreso de datos del usuario (el nombre del animal en este caso). -->
+            <!-- El parámetro 'name="animal"' es la clave que utilizará el servidor (req.body.animal), identificando el valor enviado. -->
+            <!-- El parámetro 'required' evita al usuario un envío de formulario vacío. -->
+            <input type="text" id="animal" name="animal" placeholder="Escribe tu animal aquí" required>
+            <br>
+            
+            <!-- El botón de confirmación que envía el formulario. Al activarlo, nace una petición POST a la dirección de 'action'. -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

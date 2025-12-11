@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- Codificación estándar en la web. -->
+    <meta charset="UTF-8">
+
+    <!-- Control de escala y dimensiones en dispositivos móviles. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página final. -->
+    <title>Resultado del Animal Favorito</title>
+
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Texto encabezado que mostrará el animal colocado en el input. -->
+        <!-- El término '%%ANIMAL%%' hace el llamado del dato ingresado por el usuario para reemplazarlo. -->
+        <!-- El servidor (server.js) se encargará de este reemplazo. -->
+        <h1>Tu animal favorito es: %%ANIMAL%%</h1>
+        
+        <!-- Un añadido extra de un enlace para que el usuario pueda volver a interactuar en el input y recibir otra salida como indique. -->
+        <!-- El término 'href="/"' es el que permite volver a dirigir a la raiz de la apicación, donde se visualiza nuevamente el input.html -->
+        <p><a href="/">Volver a introducir animal</a></p>
+    </div>
+</body>
+</html>
