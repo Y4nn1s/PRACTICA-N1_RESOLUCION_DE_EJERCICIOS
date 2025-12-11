@@ -1,8 +1,5 @@
 # Ignorar las dependencias de Node a nivel raíz y en subcarpetas
-**/node_modules
-
-# Archivos compilados de TypeScript
-**/*.js
+**/node_modules/
 
 # Archivos de log
 npm-debug.log*
