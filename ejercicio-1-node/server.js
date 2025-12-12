@@ -1,5 +1,7 @@
 // Importación de los módulos:
 // El parámetro 'express' es un framework que ayuda a construir la aplicación web de Node.js.
+const express = require('express');
+
 // Este otro, 'path', vendría siendo el módulo nativo de Node.js.
 // 'path' da acceso a trabajos con rutas de archivos y directorios.
 const path = require('path');
